@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Reset and base styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* Body style */
+body {
+  height: 100vh;
+  background: #000 url(BG3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Score container style */
+.score-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+/* Start button style */
+#start {
+  background: #000 url(BG1.jpg);
+  background-position: center;
+  height: 6em;
+  width: 6em;
+  font-size: 1.8em;
+  color: #e31c1c;
+  border: 0.2em solid #090029;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Game container style */
+.game-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 31em;
+  padding: 3em 1.5em;
+  border: 0.6em solid #000000;
+  border-radius: 0.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+/* Timer style */
+.timer span {
+  font-weight: 800;
+}
+
+/* Header and num style */
+.header,
+.num {
+  text-align: right;
+}
+
+/* Football image style */
+.football-image {
+  display: block;
+  margin: 3em auto 0 auto;
+}
+
+/* Options container style */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+/* Options button style */
+.options button {
+  background-color: #ffffff;
+  padding: 0.8em;
+  border: 0.3em solid #090029;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 0 0 #090029;
+  cursor: pointer;
+}
+
+/* Options button hover effect */
+.options button:hover {
+  box-shadow: none;
+  transform: translateY(0.6em);
+}
+
+/* Next button container style */
+.nxt-btn-div {
+  margin-top: 3em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Next button style */
+.next-btn {
+  cursor: pointer;
+  background-color: #090029;
+  color: #ffffff;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  padding: 0.8em 3em;
+}
+
+/* Hide element */
+.hide {
+  display: none;
+}
+
+/* Disabled options style */
+.options:disabled {
+  border-color: #a0a0a0;
+  color: #a0a0a0;
+  box-shadow: 0 0.5em 0 0 #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Correct option style */
+.options button.correct {
+  background: #58cc5d;
+}
+
+/* Incorrect option style */
+.options button.incorrect {
+  background: #eb5650;
+}
+
+/* Correct and incorrect option common style */
+.options button.correct,
+.options button.incorrect {
+  color: #ffffff;
+  border-color: #090029;
+  box-shadow: 0 0.5em 0 0 #090029;
+}
+
+/* User score style */
+#user-score {
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing FC Logo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Container -->
+    <div class="game-container hide">
+        <div class="header">
+            <div class="timer"></div>
+        </div>
+        <div class="container"></div>
+    </div>
+
+    <!-- Score Container -->
+    <div class="score-container">
+        <div id="user-score"></div>
+        <button id="start">START</button>
+    </div>
+
+    <!-- Audio Elements for Feedback -->
+    <audio id="correct-sound" src="sounds/correct.mp3"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3"></audio>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
